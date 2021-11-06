@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
-}
+/* Universal CSS */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
+}
+.fdrc {
   flex-direction: column;
-  align-items: center;
+}
+.fdrr {
+  flex-direction: row;
+}
+.jcc {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.aic {
+  align-items: center;
+}
+.jc-spbtw {
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@500&display=swap");
+
+.monty {
+  font-family: "Montserrat", sans-serif;
+}
+.lato {
+  font-family: "Lato";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Buttons */
+.act-button {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #1c8bf9;
+  border: 0;
+  width: 43%;
+  height: 50px;
+  border-radius: 31px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin: 30px auto;
+}
+.act-button:hover {
+  background-color: #186b9e;
+}
+.button-1 {
+  font-size: 16px;
+  font-weight: 800;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 43%;
+  height: 50px;
+  border-radius: 31px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin: 30px auto;
+}
+.button-1:hover {
+  background-color: white;
+}
+
+/* Components */
+/* Hero */
+.hero-container {
+  background-image: url("./assets/hero.jpg");
+  display: block;
+  height: 89vh;
+  background-size: cover;
+  background-position: center 90%;
+}
+
+.nav-container {
+  width: 30%;
+}
+.hero-text {
+  width: 50%;
+}
+.hero-title {
+  font-size: 4vh;
+}
+.call-to-action {
+  width: 25%;
+}
+
+/* Media */
+@media only screen and (max-width: 425px) {
+  .nav-container {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-items {
+    padding: 0px 10px;
+  }
+  .nav-items li {
+    font-size: 3vh;
+  }
+  .hero-text {
+    width: 82%;
+  }
+  .hero-title {
+    font-size: 3vh;
+  }
+  .call-to-action {
+    width: 100%;
+  }
+  .act-button {
+    width: 25%;
+    height: 25px;
+    margin-right: 10px;
+    font-size: 3vh;
+  }
+  .button-1 {
+    width: 25%;
+    height: 25px;
+    margin-left: 10px;
+    font-size: 3vh;
   }
 }
